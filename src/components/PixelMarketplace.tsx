@@ -305,7 +305,7 @@ const PixelMarketplace = ({
                 fontWeight={"bold"}
                 gutterBottom
               >
-                ZETA = ERC20 Token create by Zetachain, used for incentivizing.
+                ZETA = ERC20 Token created by Zetachain, used for incentivizing.
               </Typography>
             </Grid>
           </>
