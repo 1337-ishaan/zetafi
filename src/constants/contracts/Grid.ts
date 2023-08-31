@@ -1,6 +1,6 @@
 export const grid: Record<string, { contractAddress: string; abi: any }> = {
   5: {
-    contractAddress: "0x7c7A83120f42c261C8f28BDD556Bf17a69CbAba7", // 0.0001ETH
+    contractAddress: "0x02A9136852f3c2521f86bd7BB7333be9A7D39172", // 0.0001ETH
     // contractAddress: "0xD62EF1cE108a0cA141435af0aC137A4aC420fdDf",// 0.01ETH
     abi: [
       {
