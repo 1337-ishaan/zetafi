@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  /* font-family: "Major Mono Display", BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Courier Prime", monospace !important;
+  font-family: "Inter", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 87, 65);
+  color: #eee;
+}
+
+/* MUI customizations */
+
+.MuiButtonBase-root {
+  background: #d4ff5c !important;
+  color: #1c1c1e !important;
+  font-family: "Inter", sans-serif;
+
+  font-family: "Courier Prime", monospace !important;
+  font-weight: 700 !important;
+}
+.pixel-plot:hover {
+  background: rgba(211, 255, 92, 0.5) !important;
+}
+
+button {
+  /* background: #d4ff5c !important;
+  color: #1c1c1e !important; */
+}
+.MuiTypography-root {
+  font-family: "Courier Prime", monospace !important;
+  font-family: "Inter", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
