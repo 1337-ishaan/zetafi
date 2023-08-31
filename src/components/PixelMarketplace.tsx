@@ -296,7 +296,7 @@ const PixelMarketplace = ({
                 After Purchase Value: {purchaseAmount * 2} ETH
               </Typography>
               <Typography variant="h5" fontWeight={"bold"} gutterBottom>
-                Rewards: 0.001 ZETA
+                Rewards: 0.0001 ZETA
               </Typography>
 
               <Typography
