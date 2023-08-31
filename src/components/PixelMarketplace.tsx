@@ -192,7 +192,7 @@ const PixelMarketplace = ({
     setPurchaseAmount(weiToEthers(amountToSend));
   };
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div />;
   }
 
   return (
