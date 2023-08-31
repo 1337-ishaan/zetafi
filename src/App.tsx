@@ -36,7 +36,7 @@ const { chains, publicClient } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "$StratFi",
+  appName: "ZETA",
   projectId: "af9877be5b6b4f0a4a7e849bbd2c046f",
   chains,
 });

@@ -296,7 +296,7 @@ const PixelMarketplace = ({
                 After Purchase Value: {purchaseAmount * 2} ETH
               </Typography>
               <Typography variant="h5" fontWeight={"bold"} gutterBottom>
-                Rewards: 100 $StratFi
+                Rewards: 100 ZETA
               </Typography>
 
               <Typography
@@ -305,7 +305,7 @@ const PixelMarketplace = ({
                 fontWeight={"bold"}
                 gutterBottom
               >
-                $StratFi = ERC20 Token used for Incentivizing the buyers
+                ZETA = ERC20 Token used for Incentivizing the buyers
               </Typography>
             </Grid>
           </>

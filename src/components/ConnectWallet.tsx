@@ -71,7 +71,7 @@ export const ConnectWallet = ({
           <img
             style={{ height: "420px" }}
             src={Logo}
-            alt="Strategic Finance ($StratFi)"
+            alt="Strategic Finance (ZETA)"
           />
         </Grid> */}
         <Grid item xs={6} columnGap={2} display="flex" justifyContent="end">
@@ -104,7 +104,7 @@ export const ConnectWallet = ({
             Show my Plots: {isMyPlots ? "Yes" : "No"}
           </Button>
           {/* <Button onClick={withdrawEther} variant="contained">
-            Burn $StratFi
+            Burn ZETA
           </Button> */}
         </Grid>
       </Grid>
