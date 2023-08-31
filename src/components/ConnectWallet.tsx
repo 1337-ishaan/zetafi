@@ -81,7 +81,7 @@ export const ConnectWallet = ({
               textTransform={"none"}
               target={"_blank"}
               rel="noopener noreferrer"
-              href="https://askishaancodes.notion.site/askishaancodes/Strategic-Finance-Mechanics-1e05a38b11e541a5bcfff48081561385"
+              href="https://askishaancodes.notion.site/ZetaFi-Finance-Zetachain-9ccc979ac3284d0aa7413686fb44b855?pvs=4"
             >
               MECHANICS 🏆
             </Link>
