@@ -296,7 +296,7 @@ const PixelMarketplace = ({
                 After Purchase Value: {purchaseAmount * 2} ETH
               </Typography>
               <Typography variant="h5" fontWeight={"bold"} gutterBottom>
-                Rewards: 100 ZETA
+                Rewards: 0.001 ZETA
               </Typography>
 
               <Typography
@@ -305,7 +305,7 @@ const PixelMarketplace = ({
                 fontWeight={"bold"}
                 gutterBottom
               >
-                ZETA = ERC20 Token used for Incentivizing the buyers
+                ZETA = ERC20 Token create by Zetachain, used for incentivizing.
               </Typography>
             </Grid>
           </>
