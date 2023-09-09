@@ -97,19 +97,32 @@ const PixelMarketplace = ({
     purchaseCount: number
   ) => {
     // storing to db
-    const { data, error } = await supabase
-      .from("Grid")
-      .insert([
-        {
-          coords,
-          price,
-          purchased_by,
-          purchase_count: purchaseCount,
-        },
-      ])
-      .select();
-    if (!error) {
-      return data;
+
+    console.log(price, purchaseCount, "price");
+    if (purchaseCount === 0) {
+      const { data, error } = await supabase
+        .from("Grid")
+        .insert([
+          {
+            coords,
+            price,
+            purchased_by,
+            purchase_count: purchaseCount,
+          },
+        ])
+        .select();
+      if (!error) {
+        return data;
+      }
+    } else {
+      const { data, error } = await supabase
+        .from("Grid")
+        .update({ price, purchased_by, purchase_count: purchaseCount })
+        .eq("coords", coords)
+        .select();
+      if (!error) {
+        return data;
+      }
     }
   };
   const loadPixels = async () => {
@@ -141,6 +154,7 @@ const PixelMarketplace = ({
 
         const coIndex = coords[0] + coords[1] * 99;
         const purchaseCount = await contract?.getPlotPurchaseCount(coIndex);
+        console.log(purchaseCount);
         const amountToSend =
           (+BigInt(purchaseCount).toString() >= 2
             ? +BigInt(purchaseCount).toString()
