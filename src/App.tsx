@@ -23,6 +23,7 @@ import PixelMarketplace from "./components/PixelMarketplace";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SocialLinks from "./components/SocialLinks";
 // import { zetachain } from "./constants/chain-config/customChain";
 const { chains, publicClient } = configureChains(
   [
@@ -89,6 +90,7 @@ function App() {
           showMyPlots={showMyPlots}
           hideMyPlots={hideMyPlots}
         />
+        <SocialLinks />
       </RainbowKitProvider>
     </WagmiConfig>
   );
