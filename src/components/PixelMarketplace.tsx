@@ -36,6 +36,8 @@ const PixelMarketplace = ({
   const [refetch, setRefetch] = React.useState<boolean>(false);
   const [openLoader, setOpenLoader] = React.useState(false);
   const [purchaseAmount, setPurchaseAmount] = React.useState<any>();
+  const [purchaseCount, setPurchaseCount] = React.useState<any>();
+
   const { chain } = useNetwork();
   useEffect(() => {
     const ethersInit = async () => {
@@ -154,7 +156,7 @@ const PixelMarketplace = ({
 
         const coIndex = coords[0] + coords[1] * 99;
         const purchaseCount = await contract?.getPlotPurchaseCount(coIndex);
-        console.log(purchaseCount);
+
         const amountToSend =
           (+BigInt(purchaseCount).toString() >= 2
             ? +BigInt(purchaseCount).toString()
@@ -199,6 +201,7 @@ const PixelMarketplace = ({
 
     const coIndex = r + c * 99;
     const purchaseCount = await contract?.getPlotPurchaseCount(coIndex);
+    setPurchaseCount(+BigInt(purchaseCount).toString());
     const amountToSend =
       (+BigInt(purchaseCount).toString() >= 2
         ? +BigInt(purchaseCount).toString()
@@ -209,6 +212,7 @@ const PixelMarketplace = ({
     return <div />;
   }
 
+  console.log(purchaseCount);
   return (
     <Grid container paddingX={5} paddingY={2}>
       {/* // <div style={{ display: "flex", padding: "10px 40px" }}> */}
@@ -307,7 +311,8 @@ const PixelMarketplace = ({
                 Purchase Price: {purchaseAmount} ETH
               </Typography>
               <Typography variant="h5" fontWeight={"bold"} gutterBottom>
-                After Purchase Value: {purchaseAmount * 2} ETH
+                After Purchase Value:{" "}
+                {(0.0001 * purchaseCount + 0.0002).toFixed(4)} ETH
               </Typography>
               <Typography variant="h5" fontWeight={"bold"} gutterBottom>
                 Rewards: 0.0001 ZETA
